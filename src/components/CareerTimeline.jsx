@@ -8,7 +8,7 @@ export default function CareerTimeline() {
         <ScrollReveal>
           <div className="eyebrow">CAREER JOURNEY</div>
           <h2 className="section-heading" style={{ marginTop: 16 }}>
-            Operations → DevOps → AI-native engineering.
+            Operations → DevOps → Cloud leadership.
           </h2>
         </ScrollReveal>
 
@@ -67,7 +67,15 @@ export default function CareerTimeline() {
                       gap: 10,
                     }}
                   >
-                    <h3 style={{ fontSize: 22, fontWeight: 600 }}>{role.company}</h3>
+                    <h3 style={{ fontSize: 22, fontWeight: 600, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+                      {role.company}
+                      {role.current && (
+                        <span className="pill" style={{ color: "var(--accent-green)", borderColor: "rgba(22,128,75,0.35)" }}>
+                          <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--accent-green)" }} />
+                          Current
+                        </span>
+                      )}
+                    </h3>
                     <span className="pill">{role.year}</span>
                   </div>
 
@@ -85,6 +93,11 @@ export default function CareerTimeline() {
                         {idx < role.roles.length - 1 && <span style={{ margin: "0 6px" }}>→</span>}
                       </span>
                     ))}
+                    {role.location && (
+                      <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--text-soft)" }}>
+                        · {role.location}
+                      </span>
+                    )}
                   </div>
 
                   <p style={{ marginTop: 16, color: "var(--text-soft)", lineHeight: 1.7, fontSize: 15 }}>

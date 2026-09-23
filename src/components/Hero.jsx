@@ -3,6 +3,7 @@ import AIHeroNetwork from "./AIHeroNetwork.jsx";
 import { SITE_CONFIG } from "../data/config.js";
 import EmailButton from "./EmailButton.jsx";
 import prashanthPhoto from "../assets/prashanth-photo.jpg";
+import { HIGHLIGHTS } from "../data/content.js";
 
 export default function Hero() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -76,7 +77,7 @@ export default function Hero() {
               >
                 <img
                   src={prashanthPhoto}
-                  alt="Prashanth Manna, DevOps and Cloud Engineer"
+                  alt="Prashanth Manna, Cloud and DevOps Manager"
                   style={{
                     width: "100%",
                     height: "100%",
@@ -105,7 +106,7 @@ export default function Hero() {
                   boxShadow: "0 0 0 3px rgba(22,128,75,0.15)",
                 }}
               />
-              SYSTEMS ONLINE
+              NOW · {SITE_CONFIG.role.toUpperCase()} @ {SITE_CONFIG.currentCompany.toUpperCase()}
             </div>
 
             <p
@@ -118,9 +119,9 @@ export default function Hero() {
                 lineHeight: 1.8,
               }}
             >
-              AWS · GCP · AI AGENTS
+              {SITE_CONFIG.location.toUpperCase()}
               <br />
-              SECURITY · AUTOMATION
+              {SITE_CONFIG.availability.toUpperCase()}
             </p>
           </motion.div>
         </div>
@@ -131,7 +132,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="eyebrow">AI-DRIVEN CLOUD &amp; DEVOPS ENGINEERING</div>
+          <div className="eyebrow">CLOUD &amp; DEVOPS MANAGER · AI-DRIVEN INFRASTRUCTURE</div>
 
           <h1
             style={{
@@ -154,20 +155,73 @@ export default function Hero() {
               maxWidth: 560,
             }}
           >
-            Prashanth Manna — DevOps &amp; Cloud Engineer building automated delivery, multi-cloud
-            infrastructure and AI-native operations across AWS and Google Cloud. From enterprise
-            operations to autonomous engineering workflows.
+            I'm Prashanth Manna — Cloud &amp; DevOps Manager at {SITE_CONFIG.currentCompany}, where I own
+            cloud infrastructure, DevOps strategy, and release operations. 6+ years taking systems from
+            on-prem datacenters to multi-cloud platforms on Google Cloud and AWS — automated with
+            Terraform, Kubernetes, CI/CD, and AI agents.
           </p>
 
           <div style={{ display: "flex", gap: 14, marginTop: 36, flexWrap: "wrap" }}>
             <EmailButton subject="Let's talk about infrastructure">Start a Conversation</EmailButton>
+            <a href={SITE_CONFIG.resumeUrl} target="_blank" rel="noreferrer" className="btn">
+              Download Resume ↓
+            </a>
             <a href={SITE_CONFIG.linkedin} target="_blank" rel="noreferrer" className="btn">
               LinkedIn
             </a>
-            <button onClick={() => scrollTo("architecture")} className="btn">
-              Explore the System
-            </button>
           </div>
+
+          <div
+            className="hero-stats"
+            style={{
+              marginTop: 44,
+              display: "grid",
+              gridTemplateColumns: "repeat(4, 1fr)",
+              gap: 0,
+              borderTop: "1px solid var(--border-strong)",
+              paddingTop: 24,
+              maxWidth: 620,
+            }}
+          >
+            {HIGHLIGHTS.map((h, i) => (
+              <div
+                key={h.label}
+                style={{
+                  paddingRight: 16,
+                  paddingLeft: i === 0 ? 0 : 16,
+                  borderLeft: i === 0 ? "none" : "1px solid var(--border)",
+                }}
+              >
+                <div
+                  className="gradient-text"
+                  style={{ fontFamily: "var(--font-display)", fontSize: 34, fontWeight: 700, lineHeight: 1 }}
+                >
+                  {h.value}
+                </div>
+                <div style={{ marginTop: 8, fontSize: 12.5, lineHeight: 1.45, color: "var(--text-soft)" }}>
+                  {h.label}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={() => scrollTo("about")}
+            className="nav-link"
+            style={{
+              marginTop: 28,
+              background: "none",
+              border: "none",
+              padding: 0,
+              fontFamily: "var(--font-mono)",
+              fontSize: 12,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "var(--text-soft)",
+            }}
+          >
+            Scroll to explore ↓
+          </button>
         </motion.div>
       </div>
 
@@ -175,6 +229,10 @@ export default function Hero() {
         @media (max-width: 900px) {
           .hero-grid { grid-template-columns: 1fr !important; text-align: left; }
           .hero-network { opacity: 0.6; }
+        }
+        @media (max-width: 560px) {
+          .hero-stats { grid-template-columns: repeat(2, 1fr) !important; row-gap: 22px !important; }
+          .hero-stats > div:nth-child(3) { border-left: none !important; padding-left: 0 !important; }
         }
       `}</style>
     </section>

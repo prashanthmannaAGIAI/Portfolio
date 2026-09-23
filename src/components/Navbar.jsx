@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
+import { SITE_CONFIG } from "../data/config.js";
 
 const LINKS = [
-  { label: "Journey", id: "journey" },
-  { label: "Architecture", id: "architecture" },
+  { label: "About", id: "about" },
+  { label: "Experience", id: "journey" },
   { label: "Stack", id: "stack" },
   { label: "Case Studies", id: "case-studies" },
-  { label: "GitHub", id: "github" },
   { label: "AI Lab", id: "ai-lab" },
-  { label: "Vision", id: "vision" },
+  { label: "Contact", id: "contact" },
 ];
 
 export default function Navbar() {
@@ -62,6 +62,7 @@ export default function Navbar() {
           onClick={(e) => {
             e.preventDefault();
             navigate("/");
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           style={{
             fontFamily: "var(--font-mono)",
@@ -77,6 +78,7 @@ export default function Navbar() {
         <nav
           style={{
             display: "flex",
+            alignItems: "center",
             gap: 28,
             fontFamily: "var(--font-mono)",
             fontSize: 12,
@@ -104,6 +106,15 @@ export default function Navbar() {
               {l.label}
             </button>
           ))}
+          <a
+            href={SITE_CONFIG.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+            style={{ padding: "9px 18px", fontSize: 11 }}
+          >
+            Resume
+          </a>
         </nav>
 
         <button
@@ -157,6 +168,15 @@ export default function Navbar() {
                   {l.label}
                 </button>
               ))}
+              <a
+                href={SITE_CONFIG.resumeUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+                style={{ marginTop: 18, justifyContent: "center" }}
+              >
+                Download Resume
+              </a>
             </div>
           </motion.div>
         )}
@@ -165,7 +185,7 @@ export default function Navbar() {
       <style>{`
         .nav-link { transition: color 0.2s ease; }
         .nav-link:hover { color: var(--text); }
-        @media (max-width: 860px) {
+        @media (max-width: 1000px) {
           .nav-desktop { display: none !important; }
           .nav-hamburger { display: flex !important; }
         }

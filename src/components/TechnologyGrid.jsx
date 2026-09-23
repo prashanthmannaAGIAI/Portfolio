@@ -8,6 +8,8 @@ const CATEGORY_COLOR = {
   "CI/CD": "var(--accent-teal)",
   Operations: "var(--accent-violet)",
   AI: "var(--accent-violet)",
+  Leadership: "var(--accent-violet)",
+  Security: "var(--accent-green)",
 };
 
 export default function TechnologyGrid() {

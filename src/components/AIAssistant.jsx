@@ -5,7 +5,7 @@ import { AI_KNOWLEDGE_BASE, AI_FALLBACK_ANSWER } from "../data/content.js";
 
 const SUGGESTED = [
   "What does Prashanth do?",
-  "What AWS experience does he have?",
+  "What is his current role?",
   "What is his AI-agent work?",
   "How can I contact him?",
 ];

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero.jsx";
+import About from "../components/About.jsx";
 import CloudArchitecture from "../components/CloudArchitecture.jsx";
 import CareerTimeline from "../components/CareerTimeline.jsx";
 import Credentials from "../components/Credentials.jsx";
@@ -17,8 +18,9 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <CloudArchitecture />
+      <About />
       <CareerTimeline />
+      <CloudArchitecture />
       <Credentials />
       <TechnologyGrid />
       <CaseStudies />
