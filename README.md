@@ -32,7 +32,7 @@ Open **`src/data/config.js`**:
 ```js
 export const SITE_CONFIG = {
   name: "Prashanth Manna",
-  title: "Cloud & DevOps Manager | AI-Driven Infrastructure",
+  title: "Senior DevOps Engineer | Multi-Cloud (AWS · Azure · GCP) | AI Agent Deployment",
   email: "prashanthmanna.ai@gmail.com",
   linkedin: "https://www.linkedin.com/in/prashanth-manna-12756a429/",
   githubUsername: "mannaprashanth", // <-- change this to update the GitHub Radar section

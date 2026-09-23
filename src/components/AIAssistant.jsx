@@ -6,6 +6,7 @@ import { AI_KNOWLEDGE_BASE, AI_FALLBACK_ANSWER } from "../data/content.js";
 const SUGGESTED = [
   "What does Prashanth do?",
   "What is his current role?",
+  "Has he worked with Azure?",
   "What is his AI-agent work?",
   "How can I contact him?",
 ];
@@ -229,7 +230,7 @@ export default function AIAssistant() {
               <input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask about his AWS experience, AI-agent work, hobbies…"
+                placeholder="Ask about his AWS, Azure, or GCP experience, AI agents, hobbies…"
                 aria-label="Ask Prashanth AI a question"
                 style={{
                   flexGrow: 1,

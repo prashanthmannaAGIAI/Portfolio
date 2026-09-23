@@ -4,24 +4,24 @@ import { SITE_CONFIG } from "../data/config.js";
 
 const FOCUS = [
   {
-    title: "Lead",
+    title: "Deploy AI",
     color: "var(--accent-violet)",
-    body: "DevOps strategy, release management, incident command, stakeholder and vendor coordination.",
+    body: "Containerized AI agents with secure model / API access, autoscaling, monitoring, and rollback.",
   },
   {
     title: "Build",
     color: "var(--accent-blue)",
-    body: "Terraform modules, Docker and Kubernetes platforms, CI/CD on GitHub Actions and Cloud Build.",
+    body: "Multi-cloud on AWS, Azure, and GCP with Terraform, Kubernetes (GKE / EKS / AKS), and CI/CD.",
   },
   {
     title: "Secure",
     color: "var(--accent-teal)",
-    body: "IAM and RBAC, secret management, SSL/TLS, SAST and OPA policy gates in the pipeline.",
+    body: "Least-privilege IAM, secrets and KMS, WAF, SAST, OPA — compliance-aware for regulated, KYC workloads.",
   },
   {
-    title: "Automate",
+    title: "Lead",
     color: "var(--accent-green)",
-    body: "An AI DevOps agent that carries a main-branch commit through build, validation, and release.",
+    body: "Release and incident management, FinOps, stakeholders — and growth strategy with Marketing & Strategy.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function About() {
           <ScrollReveal>
             <div className="eyebrow">ABOUT</div>
             <h2 className="section-heading" style={{ marginTop: 16 }}>
-              From datacenter operations to leading cloud platforms.
+              From datacenter operations to AI agents in production.
             </h2>
             <p style={{ marginTop: 24, color: "var(--text-soft)", fontSize: 16.5, lineHeight: 1.8, maxWidth: 680 }}>
               {SUMMARY}

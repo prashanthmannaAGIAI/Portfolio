@@ -38,8 +38,8 @@ export default function Contact() {
               Cloud · DevOps · AI Agents · Automation · Infrastructure
             </p>
             <p style={{ color: "var(--text-soft)", fontSize: 15, maxWidth: 560, lineHeight: 1.7 }}>
-              Based in {SITE_CONFIG.location} · {SITE_CONFIG.availability}. Open to Cloud &amp; DevOps
-              leadership conversations, platform engineering, and AI-driven infrastructure work.
+              Based in {SITE_CONFIG.location} · {SITE_CONFIG.availability}. Open to Senior DevOps,
+              multi-cloud platform engineering, and AI agent deployment roles.
             </p>
 
             <div style={{ display: "flex", gap: 14, marginTop: 12, flexWrap: "wrap", justifyContent: "center" }}>

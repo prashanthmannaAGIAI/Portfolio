@@ -77,7 +77,7 @@ export default function Hero() {
               >
                 <img
                   src={prashanthPhoto}
-                  alt="Prashanth Manna, Cloud and DevOps Manager"
+                  alt="Prashanth Manna, Senior DevOps Engineer"
                   style={{
                     width: "100%",
                     height: "100%",
@@ -132,7 +132,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="eyebrow">CLOUD &amp; DEVOPS MANAGER · AI-DRIVEN INFRASTRUCTURE</div>
+          <div className="eyebrow">SENIOR DEVOPS ENGINEER · AWS · AZURE · GCP · AI AGENTS</div>
 
           <h1
             style={{
@@ -155,10 +155,10 @@ export default function Hero() {
               maxWidth: 560,
             }}
           >
-            I'm Prashanth Manna — Cloud &amp; DevOps Manager at {SITE_CONFIG.currentCompany}, where I own
-            cloud infrastructure, DevOps strategy, and release operations. 6+ years taking systems from
-            on-prem datacenters to multi-cloud platforms on Google Cloud and AWS — automated with
-            Terraform, Kubernetes, CI/CD, and AI agents.
+            I'm Prashanth Manna — a Senior DevOps Engineer with 7+ years across AWS, Azure, and Google
+            Cloud, specializing in deploying AI agents to production. Today I own cloud, DevOps, and
+            release operations at {SITE_CONFIG.currentCompany}, an Australian investment platform —
+            automated with Terraform, Kubernetes, and CI/CD.
           </p>
 
           <div style={{ display: "flex", gap: 14, marginTop: 36, flexWrap: "wrap" }}>

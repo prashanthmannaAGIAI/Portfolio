@@ -8,7 +8,7 @@ export default function CareerTimeline() {
         <ScrollReveal>
           <div className="eyebrow">CAREER JOURNEY</div>
           <h2 className="section-heading" style={{ marginTop: 16 }}>
-            Operations → DevOps → Cloud leadership.
+            Operations → Multi-cloud → AI agents in production.
           </h2>
         </ScrollReveal>
 

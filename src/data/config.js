@@ -5,10 +5,10 @@
 
 export const SITE_CONFIG = {
   name: "Prashanth Manna",
-  title: "Cloud & DevOps Manager | AI-Driven Infrastructure",
-  role: "Cloud & DevOps Manager",
+  title: "Senior DevOps Engineer | Multi-Cloud (AWS · Azure · GCP) | AI Agent Deployment",
+  role: "Senior Cloud & DevOps Engineer",
   currentCompany: "The Supper",
-  location: "Hyderabad, India",
+  location: "Abu Dhabi, UAE",
   availability: "Open to Remote / Relocation",
   email: "prashanthmanna.ai@gmail.com",
   linkedin: "https://www.linkedin.com/in/prashanth-manna-12756a429/",

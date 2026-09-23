@@ -6,13 +6,13 @@
 // ============================================================
 
 export const SUMMARY =
-  "Cloud & DevOps Manager with 6+ years of experience spanning enterprise infrastructure operations, on-premises datacenter environments, and modern multi-cloud engineering. Currently leads cloud infrastructure, DevOps strategy, and release operations full-time at The Supper, an Australian startup, after designing, deploying, automating, and securing infrastructure across four production platforms at ThinkHat.ai — primarily on Google Cloud Platform, with additional AWS expertise — using Terraform, Docker, Kubernetes, and GitHub Actions / Cloud Build CI/CD pipelines.";
+  "Senior DevOps & Cloud Engineer with 7+ years of experience across enterprise data-center operations and modern multi-cloud engineering on AWS, Microsoft Azure, and Google Cloud. Specialist in deploying and operating AI agents in production — containerizing, securing, scaling, and monitoring agentic workloads for healthcare, life-sciences, and clinical-simulation platforms (NOKI, Samaras, Socratic AI). Currently the sole owner of cloud, DevOps, and release operations at The Supper, an Australian investment platform, and a member of its Marketing & Strategy team — bridging infrastructure decisions with business growth. Hands-on with Terraform, Docker, Kubernetes (GKE / EKS / AKS), GitHub Actions, Cloud Build, and Bitbucket Pipelines, with strong DevSecOps, compliance-aware architecture, and cost-optimization practice.";
 
 export const HIGHLIGHTS = [
-  { value: "6+", label: "Years in infrastructure & operations" },
+  { value: "7+", label: "Years in infrastructure & DevOps" },
+  { value: "3", label: "Clouds — AWS · Azure · GCP" },
   { value: "4", label: "Production platforms supported" },
-  { value: "2", label: "Clouds — GCP primary, AWS" },
-  { value: "1", label: "AI DevOps agent, commit → deploy" },
+  { value: "3", label: "AI products with agents in production" },
 ];
 
 export const CAREER = [
@@ -21,90 +21,87 @@ export const CAREER = [
     company: "The Supper",
     current: true,
     location: "Remote (Australia) · Full-time",
-    roles: ["Cloud & DevOps Manager"],
+    roles: ["Senior Cloud & DevOps Engineer", "Marketing & Strategy Team"],
     summary:
-      "Fast-moving Australian startup — sole owner of cloud infrastructure, DevOps, and release operations. Originally built The Supper's cloud infrastructure and CI/CD pipelines as a client engagement at ThinkHat.ai before joining full-time to lead the function.",
+      "Australian investment platform — KYC-verified investor onboarding, investments, and SIM activation. Sole owner of cloud infrastructure, DevOps, and release operations. Originally built The Supper's cloud and CI/CD foundation as a ThinkHat.ai client engagement before being hired full-time to lead the function.",
     responsibilities: [
-      "Own end-to-end cloud infrastructure across development and production — architecture, provisioning, security, cost, and reliability",
-      "Lead DevOps strategy and release management: design and operate CI/CD pipelines, define branching and deployment workflows, and coordinate releases with product and engineering stakeholders",
-      "Manage Terraform-based Infrastructure as Code for all environments, standardizing provisioning through reusable modules",
-      "Operate containerized workloads with Docker, managing build, registry, and deployment lifecycles for fast, reliable releases",
-      "Establish monitoring, alerting, and incident response practices; lead troubleshooting across application, infrastructure, and networking layers",
-      "Drive security and governance — IAM controls, secret management, SSL/TLS — and cloud cost optimization suited to a lean startup",
+      "Sole owner of cloud infrastructure, DevOps, and release operations across development and production — architecture, provisioning, security, cost, and reliability",
+      "Built and deployed the production backend on AWS from the ground up: EC2, ECR, RDS PostgreSQL, and Dockerized backend / worker / reconciler services behind a Caddy reverse proxy with automated TLS",
+      "Hardened security for a regulated, KYC-driven investment platform: least-privilege IAM roles, SSM Session Manager access (no open SSH), secrets in SSM Parameter Store (SecureString / KMS), and deploy-time generated environment configs",
+      "Delivered customer communication infrastructure: AWS SES (DKIM, MAIL FROM, domain verification), SNS push notifications for iOS (APNs) and Android (FCM), and ACMA-compliant SMS sender registration",
+      "Designed CI/CD with Bitbucket Pipelines and ECR image versioning; defined branching, release, and database migration (Alembic) workflows with product and engineering",
+      "Led production troubleshooting across application, network, and third-party telco integrations, including CloudWatch-driven root-cause analysis and WAF / proxy issues",
+      "As part of the Marketing & Strategy team, translate platform capabilities into growth strategy — shaping product roadmap, launch readiness, and an admin analytics dashboard tracking registrations, KYC funnel, investments, and notification performance",
     ],
-    technologies: ["DevOps Strategy", "Release Management", "Terraform", "Docker", "CI/CD", "Monitoring", "IAM & Secrets", "Cost Optimization"],
+    technologies: ["AWS", "EC2", "ECR", "RDS PostgreSQL", "SES / SNS", "SSM & KMS", "Bitbucket Pipelines", "Docker", "Caddy", "CloudWatch"],
   },
   {
     year: "2024 – May 2026",
     company: "ThinkHat.ai",
     location: "India",
-    roles: ["Cloud & DevOps Engineer"],
+    roles: ["Cloud & DevOps Engineer", "AI Agent Deployment"],
     summary:
-      "Designed, deployed, automated, secured, and supported infrastructure across four concurrent production platforms — NOKI, Samaras, Socratic AI, and The Supper — primarily on Google Cloud Platform, with AWS infrastructure work as well.",
+      "Primary focus: deploying AI agents to production across three AI products — NOKI, Samaras, and Socratic AI — while designing, deploying, and supporting infrastructure for four concurrent production platforms on Google Cloud and AWS.",
     products: ["NOKI", "Samaras", "Socratic AI", "The Supper"],
     responsibilities: [
-      "Designed, deployed, maintained, and troubleshot cloud infrastructure across development, staging, and production on GCP and AWS",
-      "Built and maintained automated CI/CD pipelines using GitHub Actions, Google Cloud Build, and Git-based workflows, reducing manual deployment effort",
-      "Containerized applications with Docker, managed images in Google Artifact Registry, and deployed via Google Cloud Run",
-      "Developed Terraform-based Infrastructure as Code, including reusable modules that significantly cut manual provisioning time",
-      "Worked with Kubernetes — deployments, services, namespaces, ConfigMaps, Secrets, RBAC, ingress — including GKE/EKS and Helm",
-      "Introduced an AI DevOps agent for Samaras, operating automatically from a main-branch commit through to deployment",
-      "Managed configuration and secrets with Google Secret Manager and cloud IAM controls across all supported platforms",
-      "Implemented monitoring with Datadog and Google Cloud Monitoring; led troubleshooting of production incidents",
-      "Implemented DevSecOps with SonarCloud/SonarQube, SAST, and OPA-based policy controls",
-      "Contributed to an automated provisioning platform using structured requests, Terraform Plan validation, and OPA policy checks",
+      "Deployed AI agents to production across NOKI, Samaras, and Socratic AI — packaging agents as containers, wiring secure model / API access, and operating them on Cloud Run and Kubernetes with monitoring and rollback",
+      "Designed, deployed, and supported infrastructure across dev, staging, and production on GCP and AWS, supporting four concurrent production platforms",
+      "Introduced an AI DevOps agent for Samaras that runs automatically from a main-branch commit through build, validation, and deployment, reducing manual release coordination",
+      "Built automated CI/CD with GitHub Actions and Google Cloud Build; containerized services with Docker and managed images via Google Artifact Registry",
+      "Developed Terraform IaC with reusable modules; contributed to a self-service provisioning platform with Terraform Plan validation and OPA policy checks for governance",
+      "Operated Kubernetes workloads (GKE / EKS, Helm) — deployments, services, namespaces, ConfigMaps, Secrets, RBAC, and ingress",
+      "Secured healthcare and clinical data platforms using Secret Manager, IAM, SSL/TLS, and DNS controls; embedded DevSecOps with SonarCloud / SonarQube and SAST",
+      "Implemented observability with Datadog and Google Cloud Monitoring and led incident troubleshooting to minimize downtime",
     ],
     technologies: [
       "GCP",
       "AWS",
+      "AI Agents",
+      "Cloud Run",
+      "GKE / EKS",
       "Docker",
-      "Kubernetes",
       "Terraform",
       "GitHub Actions",
-      "Google Cloud Build",
+      "Cloud Build",
       "Datadog",
-      "IAM & Secrets",
       "DevSecOps",
     ],
   },
   {
     year: "2019 – 2024",
     company: "Colruyt Group",
-    location: "India",
+    location: "India · Enterprise retail group (European operations)",
     roles: ["Operational System Engineer"],
     summary:
-      "Enterprise infrastructure and operations supporting internal applications and services hosted on company-owned servers and internal data-center infrastructure. Primarily on-premises rather than public cloud, but built the foundation in production operations, deployments, and troubleshooting that carried directly into cloud and DevOps engineering.",
+      "Enterprise infrastructure and operations for business-critical systems across internal data centers and Microsoft Azure — building the foundation in production operations, deployments, cloud, and troubleshooting that carried directly into DevOps engineering.",
     responsibilities: [
-      "Supported enterprise servers and applications running in internal data-center environments",
-      "Deployed applications and services onto company-managed and internally hosted servers",
-      "Performed application deployment, server configuration, system maintenance, and operational support",
-      "Monitored system and application health and investigated production issues",
-      "Troubleshot server, application, deployment, connectivity, and infrastructure-related incidents",
-      "Analyzed logs and system behavior to identify root causes and restore services",
-      "Worked within enterprise incident-management and change-management processes",
+      "Supported enterprise servers and applications in internal data-center environments, delivering consistent uptime for business-critical systems",
+      "Worked on Microsoft Azure cloud — Virtual Machines, AKS, Azure DevOps Pipelines, Entra ID (Azure AD), Key Vault, Blob Storage, VNet, and Azure Monitor",
+      "Executed application deployments, server configuration, and maintenance within formal ITIL-style incident and change-management processes",
+      "Monitored system health, analyzed logs, and resolved production incidents with root-cause analysis",
+      "Built the Linux, Windows Server, networking, and operations foundation for the move into multi-cloud engineering",
     ],
-    technologies: ["Linux", "Windows Server", "Networking", "Enterprise Deployments", "Production Support"],
+    technologies: ["Microsoft Azure", "AKS", "Azure DevOps", "Entra ID", "Key Vault", "Linux", "Windows Server", "ITIL", "Networking"],
   },
 ];
 
 export const TECHNOLOGIES = [
-  { name: "Google Cloud Platform", category: "Cloud", description: "Cloud Run, Compute Engine, Cloud Build, Artifact Registry, Cloud Functions, Secret Manager, IAM, VPC, Load Balancing, Cloud DNS, BigQuery, Vertex AI." },
-  { name: "AWS", category: "Cloud", description: "EC2, S3, IAM, VPC, RDS, EKS, CloudWatch, Load Balancing, Security Groups." },
-  { name: "Docker", category: "Containers", description: "Containerizing applications and managing production-ready container images." },
-  { name: "Kubernetes", category: "Containers", description: "Deployments, services, pods, namespaces, ConfigMaps, Secrets, RBAC, ingress, GKE/EKS, Helm." },
-  { name: "Terraform", category: "IaC", description: "Infrastructure as Code, reusable modules, and repeatable, scalable provisioning." },
-  { name: "GitHub Actions", category: "CI/CD", description: "Automated build, test, and deployment pipelines integrated with Git-based workflows." },
-  { name: "Google Cloud Build", category: "CI/CD", description: "Automated application build and container image pipelines on GCP." },
-  { name: "Jenkins", category: "CI/CD", description: "Pipeline automation alongside GitOps practices and Bitbucket/GitHub-based workflows." },
-  { name: "Datadog", category: "Monitoring", description: "Infrastructure and application monitoring, alerting, and production troubleshooting." },
-  { name: "Cloud Monitoring & Logging", category: "Monitoring", description: "Centralized log analysis and observability across GCP-hosted services." },
-  { name: "IAM & Secret Manager", category: "Security", description: "Access control, service accounts, and secure secret management using least-privilege principles." },
-  { name: "SonarCloud / SAST / OPA", category: "Security", description: "DevSecOps practices — static analysis, code quality gates, and policy-as-code validation." },
-  { name: "PostgreSQL & Hasura", category: "Data", description: "Supporting database and GraphQL-layer infrastructure for product backends." },
-  { name: "Linux", category: "Operations", description: "Server administration, troubleshooting, and production operations." },
-  { name: "AI Agents", category: "AI", description: "AI DevOps agent automating the path from main-branch commit to deployment — build, validation, and release coordination." },
-  { name: "Leadership & Management", category: "Leadership", description: "DevOps strategy, release management, stakeholder communication, vendor coordination, cost optimization, and incident command." },
-  { name: "Networking & DNS/SSL", category: "Operations", description: "DNS, domains, SSL/TLS certificates, HTTPS, and load-balancer configuration." },
+  { name: "AI Agent Deployment", category: "AI", description: "Production AI agents — containerized runtimes on Cloud Run / GKE, LLM API integration, Vertex AI, agent secrets and API-key management, autoscaling, and agent observability." },
+  { name: "AWS", category: "Cloud", description: "EC2, ECR, EKS, S3, RDS (PostgreSQL), IAM, VPC, SES, SNS (push & SMS), SSM Parameter Store & Session Manager, KMS, CloudWatch." },
+  { name: "Microsoft Azure", category: "Cloud", description: "AKS, Virtual Machines, Azure DevOps Pipelines, Entra ID (Azure AD), Key Vault, Blob Storage, VNet, Azure Monitor." },
+  { name: "Google Cloud Platform", category: "Cloud", description: "Cloud Run, GKE, Compute Engine, Cloud Build, Artifact Registry, Cloud Functions, Secret Manager, IAM, VPC, Load Balancing, Cloud DNS, BigQuery, Vertex AI." },
+  { name: "Kubernetes", category: "Containers", description: "GKE, EKS, and AKS with Helm — deployments, services, namespaces, ConfigMaps, Secrets, RBAC, and ingress." },
+  { name: "Docker", category: "Containers", description: "Docker and Docker Compose — containerizing services and agents, with image versioning in ECR and Artifact Registry." },
+  { name: "Terraform & Policy-as-Code", category: "IaC", description: "HCL, reusable modules, Terraform Plan validation, and OPA policy checks for governed, repeatable provisioning." },
+  { name: "CI/CD & GitOps", category: "CI/CD", description: "GitHub Actions, Google Cloud Build, Bitbucket Pipelines, Azure DevOps, Jenkins — plus Git branching and release strategy." },
+  { name: "Observability & SRE", category: "Monitoring", description: "Datadog, Prometheus, Grafana, Google Cloud Monitoring & Logging, and AWS CloudWatch — alerting, RCA, and incident response." },
+  { name: "Security & Compliance", category: "Security", description: "IAM / RBAC, least-privilege design, secret management, SonarCloud / SAST, SSL/TLS, Cloudflare WAF, and KYC data handling." },
+  { name: "Compliance-Aware Architecture", category: "Security", description: "Data-residency-aware design with awareness of UAE PDPL, ISO 27001, and SOC 2 controls for regulated workloads." },
+  { name: "Data Platforms", category: "Data", description: "PostgreSQL, MySQL, Hasura, Firebase, and BigQuery supporting product backends and analytics." },
+  { name: "Linux & Scripting", category: "Operations", description: "Linux and Windows Server administration; Bash, Python, PowerShell, and YAML automation." },
+  { name: "Networking & Edge", category: "Operations", description: "Caddy, Nginx, DNS, TCP/IP, SSL/TLS, and load balancing." },
+  { name: "FinOps & Cost Optimization", category: "Leadership", description: "Right-sizing and cost governance suited to lean startup and multi-product environments." },
+  { name: "Strategy & Stakeholders", category: "Leadership", description: "Release and incident management, tech strategy and go-to-market, stakeholder and vendor management." },
 ];
 
 export const CASE_STUDIES = [
@@ -112,109 +109,109 @@ export const CASE_STUDIES = [
     slug: "noki",
     tag: "01",
     title: "NOKI — Healthcare & EHR Platform",
-    short: "Cloud infrastructure and DevOps for an AI-powered healthcare and EHR platform.",
+    short: "AI agents in production alongside an AI-powered healthcare and EHR platform.",
     productUrl: "https://app.noki.ai/login",
     overview:
-      "NOKI is an AI-powered healthcare and EHR (Electronic Health Records) platform. Prashanth supports its cloud infrastructure end to end — from containerized deployments to production troubleshooting.",
+      "NOKI is an AI-powered healthcare and EHR (Electronic Health Records) platform. Prashanth deployed and operated its AI agents in production and supported its cloud infrastructure end to end — from containerized release workflows to production troubleshooting.",
     problem:
-      "A healthcare-oriented platform needs reliable, secure infrastructure across multiple environments, with careful handling of data services like PostgreSQL and Hasura, and dependable deployment automation.",
+      "A healthcare platform running AI agents needs reliable, secure infrastructure across multiple environments, careful handling of data services like PostgreSQL and Hasura, and dependable deployment automation.",
     approach:
-      "Built and maintained containerized deployment workflows on GCP, automated build and deployment through Cloud Build and Docker, provisioned infrastructure with Terraform, and supported Cloud Run deployments alongside PostgreSQL and Hasura-based components.",
-    technologies: ["GCP", "Cloud Run", "Docker", "Terraform", "Cloud Build", "Artifact Registry", "Secret Manager", "PostgreSQL", "Hasura", "Datadog"],
+      "Packaged and deployed AI agents as containers on GCP with secure model / API access, built containerized release workflows via Cloud Build and Docker, provisioned infrastructure with Terraform, and supported Cloud Run deployments alongside PostgreSQL and Hasura components.",
+    technologies: ["GCP", "Cloud Run", "AI Agents", "Docker", "Terraform", "Cloud Build", "Artifact Registry", "Secret Manager", "PostgreSQL", "Hasura", "Datadog"],
     responsibilities: [
-      "Managed and supported cloud infrastructure across multiple environments",
-      "Automated application build and deployment processes",
-      "Configured DNS, SSL/TLS certificates, HTTPS, and cloud networking",
-      "Implemented monitoring and production troubleshooting using Datadog and Cloud Logging",
+      "Deployed and operated AI agents alongside the EHR platform",
+      "Built containerized release workflows via Cloud Build",
+      "Supported PostgreSQL / Hasura infrastructure",
+      "Configured DNS, SSL/TLS, and cloud networking; monitored with Datadog and Cloud Logging",
     ],
-    outcome: "Stable, automated deployment workflows and monitored infrastructure supporting a healthcare-context product.",
-    future: "Continue strengthening infrastructure hardening and security investigation practices as the platform grows.",
+    outcome: "Stable, automated releases and monitored AI-agent workloads supporting a healthcare-context product.",
+    future: "Continue strengthening infrastructure hardening and agent observability as the platform grows.",
   },
   {
     slug: "samaras",
     tag: "02",
     title: "Samaras — Clinical Trial & Life Sciences Platform",
-    short: "Cloud infrastructure, CI/CD, and an early AI DevOps agent for automated delivery.",
+    short: "AI agents in production, plus an AI DevOps agent automating commit-to-deployment.",
     productUrl: "https://samaras.ai/",
     overview:
-      "Samaras is an AI-driven clinical-trial and life-sciences platform. Alongside standard cloud and DevOps support, Prashanth introduced an early AI DevOps agent concept aimed at automating the path from code commit to deployment.",
+      "Samaras is an AI-driven clinical-trial and life-sciences platform. Prashanth deployed its AI agents to production and introduced an AI DevOps agent that automates the path from code commit to deployment.",
     problem:
       "Manual coordination between committing code and getting it safely deployed adds delay and requires constant human attention to drift, checks, and release steps.",
     approach:
-      "Supported cloud infrastructure and deployment workflows on GCP with Docker and Terraform, developed and maintained CI/CD automation, and introduced an AI DevOps agent designed to work automatically from the moment code is committed to the main branch through to deployment — handling the coordination between build, validation, and release steps with reduced manual intervention.",
+      "Deployed AI agents on GCP with Docker and Terraform, developed and maintained CI/CD automation, and introduced an AI DevOps agent that runs automatically from a main-branch commit through build, validation, and deployment — coordinating release steps with reduced manual intervention.",
     technologies: ["GCP", "Docker", "Terraform", "CI/CD", "GitHub", "AI Agents", "Monitoring"],
     responsibilities: [
-      "Supported cloud infrastructure and DevOps operations for the platform",
+      "Deployed AI agents to production for the platform",
       "Developed and maintained CI/CD automation",
-      "Introduced an AI DevOps agent to automate the commit-to-deployment path",
+      "Built an AI DevOps agent to automate the commit-to-deployment path",
       "Worked with development teams to improve deployment reliability and operational processes",
     ],
     outcome:
-      "A working CI/CD foundation plus an early AI-agent-driven automation layer that reduces manual steps between a main-branch commit and a live deployment.",
+      "A working CI/CD foundation plus an AI-agent-driven automation layer that reduces manual steps between a main-branch commit and a live deployment.",
     future:
-      "This AI DevOps agent work is an active engineering direction — the goal is to expand safe, policy-gated automation coverage further across the pipeline over time.",
+      "Expand safe, policy-gated automation coverage further across the pipeline over time.",
   },
   {
     slug: "socratic",
     tag: "03",
-    title: "Socratic AI — Healthcare & Clinical Simulation",
-    short: "Cloud and DevOps operations for an AI-powered clinical simulation platform.",
+    title: "Socratic AI — Clinical Simulation",
+    short: "AI agents powering clinical simulations, with automated, secured releases.",
     productUrl: "https://getsocratic.ai/",
     overview:
-      "Socratic AI is an AI-powered healthcare and clinical simulation platform. Prashanth manages its cloud infrastructure and deployment automation.",
+      "Socratic AI is an AI-powered healthcare and clinical simulation platform. Prashanth deployed the AI agents that power its simulations and manages its cloud infrastructure and release automation.",
     problem:
-      "Clinical simulation workloads need consistent deployment automation and secure application configuration across environments.",
+      "Clinical simulation workloads need consistent deployment automation and secure configuration of agents, models, and secrets across environments.",
     approach:
-      "Automated application deployment and release processes, built and supported containerized workloads with Docker, applied Terraform and Infrastructure as Code principles, and supported CI/CD workflows through GitHub.",
-    technologies: ["GCP", "Docker", "Terraform", "CI/CD", "GitHub", "Monitoring"],
+      "Deployed AI agents powering clinical simulations, automated releases with GitHub Actions, built containerized workloads with Docker, and applied Terraform-based Infrastructure as Code.",
+    technologies: ["GCP", "AI Agents", "Docker", "Terraform", "GitHub Actions", "Monitoring"],
     responsibilities: [
-      "Managed cloud infrastructure across application environments",
+      "Deployed AI agents powering clinical simulations",
       "Automated application deployment and release processes",
+      "Managed IAM, secrets, DNS, and SSL/TLS configuration",
       "Supported CI/CD workflows and source-code integration using GitHub",
-      "Supported secure application configuration, IAM, secrets, networking, DNS, and SSL/TLS requirements",
     ],
-    outcome: "Automated, monitored deployment pipelines supporting a clinical simulation product.",
+    outcome: "Automated, monitored deployment pipelines supporting an AI clinical simulation product.",
     future: "Continue extending automated policy checks across the deployment pipeline.",
   },
   {
     slug: "the-supper",
     tag: "04",
-    title: "The Supper — Australian Startup",
-    short: "Built the platform as a client engagement — now lead it full-time as Cloud & DevOps Manager.",
+    title: "The Supper — Investment Platform",
+    short: "End-to-end AWS build of a KYC-regulated investment backend with secure config, notifications, and CI/CD.",
     productUrl: "https://the-supper.co/",
     overview:
-      "The Supper is a fast-moving Australian startup. Prashanth first designed its cloud infrastructure and CI/CD pipelines as a client engagement at ThinkHat.ai, then joined full-time in May 2026 as Cloud & DevOps Manager — the sole owner of cloud infrastructure, DevOps, and release operations.",
+      "The Supper is an Australian investment platform — KYC-verified investor onboarding, investments, and SIM activation. Prashanth first built its cloud and CI/CD foundation as a ThinkHat.ai client engagement, then joined full-time in May 2026 as Senior Cloud & DevOps Engineer and member of the Marketing & Strategy team.",
     problem:
-      "A startup needs scalable, secure cloud infrastructure that can be provisioned and evolved quickly without sacrificing reliability.",
+      "A regulated, KYC-driven investment platform needs a secure production backend, reliable customer communications, and fast, safe releases — owned end to end by a lean team.",
     approach:
-      "Designed and maintained cloud infrastructure for development and production workloads, built CI/CD pipelines for automated application delivery, containerized applications with Docker, and automated infrastructure provisioning using Terraform.",
-    technologies: ["Cloud Infrastructure", "Docker", "Terraform", "CI/CD", "Networking", "Monitoring"],
+      "Built the production backend on AWS from the ground up — EC2, ECR, RDS PostgreSQL, and Dockerized backend / worker / reconciler services behind a Caddy reverse proxy with automated TLS. Locked down access with least-privilege IAM and SSM Session Manager (no open SSH), stored secrets in SSM Parameter Store with KMS, and shipped CI/CD with Bitbucket Pipelines and ECR image versioning.",
+    technologies: ["AWS", "EC2", "ECR", "RDS PostgreSQL", "SES", "SNS", "SSM & KMS", "Bitbucket Pipelines", "Docker", "Caddy", "CloudWatch"],
     responsibilities: [
-      "Designed and maintained cloud infrastructure for development and production workloads",
-      "Built and supported CI/CD pipelines for automated application delivery",
-      "Automated infrastructure provisioning and configuration using Terraform",
-      "Supported cloud deployments, networking, DNS, SSL/TLS, monitoring, and production operations",
-      "Now lead DevOps strategy, release management, incident response, security governance, and cost optimization",
+      "Built and deployed the production AWS backend from the ground up",
+      "Hardened security for KYC-regulated workloads: IAM, SSM Session Manager, Parameter Store / KMS",
+      "Delivered SES email (DKIM, MAIL FROM), SNS push for iOS / Android, and ACMA-compliant SMS sender registration",
+      "Designed CI/CD, branching, release, and Alembic database migration workflows",
+      "Shaped roadmap, launch readiness, and an admin analytics dashboard as part of Marketing & Strategy",
     ],
-    outcome: "A platform built from the ground up and now led end to end — scalable, secure cloud infrastructure suited to a fast-moving startup.",
-    future: "Continue maturing release management, observability, and cost governance as the product scales.",
+    outcome: "A secure, regulated investment backend built from zero and now owned end to end — with communications, CI/CD, and analytics in place.",
+    future: "Continue maturing observability, release management, and cost governance as the platform scales.",
   },
   {
     slug: "cloud-provisioning",
     tag: "05",
     title: "Automated Cloud Resource Provisioning Platform",
-    short: "Terraform-based automated provisioning with policy validation via OPA.",
+    short: "Self-service Terraform provisioning with Plan validation and OPA policy checks.",
     overview:
-      "An internal platform that turns structured infrastructure requests into automated, policy-checked cloud provisioning — reducing manual Terraform work and improving governance.",
+      "A self-service platform that turns structured infrastructure requests into automated, policy-checked cloud provisioning — reducing manual Terraform work and improving governance.",
     problem:
       "Manual cloud provisioning is slow, inconsistent, and hard to audit, especially as infrastructure requests scale across teams.",
     approach:
-      "Used structured infrastructure requests as the intake mechanism, automated provisioning through Terraform, implemented Terraform Plan workflows to validate changes before deployment, and introduced policy validation using OPA concepts.",
+      "Used structured infrastructure requests as the intake mechanism, automated provisioning through Terraform, validated every change with Terraform Plan before deployment, and enforced governance with OPA policy checks.",
     technologies: ["Terraform", "GCP", "GitHub", "CI/CD", "OPA", "Infrastructure as Code"],
     responsibilities: [
-      "Contributed to the design and implementation of the automated provisioning workflow",
-      "Automated infrastructure provisioning using Terraform",
-      "Introduced policy validation using OPA concepts",
+      "Contributed to the design and implementation of the self-service provisioning workflow",
+      "Automated infrastructure provisioning using reusable Terraform modules",
+      "Introduced policy validation using OPA",
       "Supported automated review and risk-assessment workflows for infrastructure changes",
     ],
     outcome: "Improved infrastructure governance, consistency, traceability, and reduced dependency on manual provisioning.",
@@ -223,22 +220,22 @@ export const CASE_STUDIES = [
   {
     slug: "enterprise-ops",
     tag: "06",
-    title: "Enterprise Operations — Colruyt Group",
-    short: "Foundational enterprise infrastructure operations on company-owned data centers.",
+    title: "Enterprise Operations & Azure — Colruyt Group",
+    short: "Enterprise data-center operations and Microsoft Azure cloud for a European retail group.",
     overview:
-      "Five years of enterprise infrastructure and operations work supporting internal applications on company-owned servers and internal data-center infrastructure — the foundation that enabled the move into cloud and DevOps engineering.",
+      "Five years of enterprise infrastructure and operations for Colruyt Group, a European retail group — supporting business-critical systems across internal data centers and Microsoft Azure. The foundation that enabled the move into multi-cloud DevOps engineering.",
     problem:
-      "Large enterprise environments depend on consistent server operations, deployment discipline, and fast incident response across internally hosted systems.",
+      "Large enterprise environments depend on consistent server operations, deployment discipline, and fast incident response across on-prem and cloud-hosted systems.",
     approach:
-      "Performed application deployment, server configuration, system maintenance, and operational support, while working within enterprise incident-management and change-management processes.",
-    technologies: ["Linux", "Windows Server", "Networking", "Enterprise Deployments"],
+      "Performed application deployment, server configuration, and maintenance within ITIL-style incident and change-management processes, and worked across Azure — Virtual Machines, AKS, Azure DevOps Pipelines, Entra ID, Key Vault, Blob Storage, VNet, and Azure Monitor.",
+    technologies: ["Microsoft Azure", "AKS", "Azure DevOps", "Entra ID", "Key Vault", "Azure Monitor", "Linux", "Windows Server", "ITIL"],
     responsibilities: [
       "Supported enterprise servers and applications in internal data-center environments",
-      "Monitored system and application health and investigated production issues",
-      "Troubleshot server, application, deployment, and infrastructure incidents",
-      "Analyzed logs and system behavior to identify root causes and restore services",
+      "Worked on Microsoft Azure cloud infrastructure and Azure DevOps pipelines",
+      "Executed deployments within formal incident and change-management processes",
+      "Resolved production incidents with log analysis and root-cause analysis",
     ],
-    outcome: "Built the production-operations foundation — deployments, troubleshooting, reliability discipline — that carried directly into cloud and DevOps engineering.",
+    outcome: "Built the production-operations and Azure cloud foundation — deployments, troubleshooting, reliability discipline — that carried directly into multi-cloud DevOps engineering.",
     future: "N/A — this is foundational, completed experience.",
   },
 ];
@@ -294,22 +291,27 @@ export const AI_KNOWLEDGE_BASE = [
   {
     keywords: ["what does prashanth do", "what does he do", "who is prashanth", "role", "what do you do"],
     answer:
-      "Prashanth is the Cloud & DevOps Manager at The Supper, an Australian startup, where he owns cloud infrastructure, DevOps strategy, and release operations. He has 6+ years of experience — previously supporting four production platforms (NOKI, Samaras, Socratic AI, The Supper) at ThinkHat.ai, primarily on Google Cloud with AWS as well, and five years in enterprise operations at Colruyt Group before that.",
+      "Prashanth is a Senior DevOps & Cloud Engineer with 7+ years across AWS, Microsoft Azure, and Google Cloud, specializing in deploying and operating AI agents in production. He is currently the sole owner of cloud, DevOps, and release operations at The Supper, an Australian investment platform, and part of its Marketing & Strategy team. Before that he deployed AI agents across NOKI, Samaras, and Socratic AI at ThinkHat.ai, and spent five years at Colruyt Group in enterprise operations and Azure.",
   },
   {
     keywords: ["aws", "amazon web services"],
     answer:
-      "Prashanth works with AWS infrastructure including EC2, S3, IAM, VPC, RDS, EKS, CloudWatch, and load balancing, alongside his primary focus on Google Cloud Platform.",
+      "At The Supper, Prashanth built the production backend on AWS from the ground up — EC2, ECR, RDS PostgreSQL, SES, SNS push and SMS, SSM Parameter Store and Session Manager, KMS, and CloudWatch — with CI/CD on Bitbucket Pipelines. He also worked with AWS (including EKS) at ThinkHat.ai.",
+  },
+  {
+    keywords: ["azure", "microsoft"],
+    answer:
+      "Prashanth worked on Microsoft Azure at Colruyt Group — Virtual Machines, AKS, Azure DevOps Pipelines, Entra ID (Azure AD), Key Vault, Blob Storage, VNet, and Azure Monitor. At ThinkHat.ai and The Supper he has worked on AWS and Google Cloud."
   },
   {
     keywords: ["gcp", "google cloud"],
     answer:
-      "GCP is Prashanth's primary cloud platform — he works across Cloud Run, Compute Engine, Cloud Build, Artifact Registry, Cloud Functions, Secret Manager, IAM, VPC, Load Balancing, Cloud DNS, BigQuery, and Vertex AI.",
+      "Prashanth used Google Cloud heavily at ThinkHat.ai — Cloud Run, GKE, Compute Engine, Cloud Build, Artifact Registry, Cloud Functions, Secret Manager, IAM, VPC, Load Balancing, Cloud DNS, BigQuery, and Vertex AI — to run AI agents and products like NOKI, Samaras, and Socratic AI.",
   },
   {
     keywords: ["kubernetes", "k8s", "docker", "container"],
     answer:
-      "Prashanth containerizes applications using Docker and works with Kubernetes concepts and cloud-native orchestration — deployments, services, pods, namespaces, ConfigMaps, Secrets, RBAC, ingress — including GKE, EKS, and Helm-based deployment concepts.",
+      "Prashanth containerizes services and AI agents with Docker and operates Kubernetes across GKE and EKS (ThinkHat.ai) and AKS (Colruyt Group, on Azure), using Helm — deployments, services, namespaces, ConfigMaps, Secrets, RBAC, and ingress.",
   },
   {
     keywords: ["terraform", "infrastructure as code", "iac"],
@@ -319,22 +321,22 @@ export const AI_KNOWLEDGE_BASE = [
   {
     keywords: ["devops experience", "devops journey", "devops"],
     answer:
-      "Prashanth's DevOps journey moved from enterprise infrastructure operations at Colruyt Group (2019–2024) into a Cloud & DevOps Engineer role at ThinkHat.ai (2024–May 2026), and now leads the function as Cloud & DevOps Manager at The Supper (May 2026–Present).",
+      "Prashanth's journey runs from enterprise data-center operations and Microsoft Azure at Colruyt Group (2019–2024), to Cloud & DevOps Engineer focused on AI agent deployment on GCP and AWS at ThinkHat.ai (2024–May 2026), to Senior Cloud & DevOps Engineer at The Supper (May 2026–Present).",
   },
   {
     keywords: ["technologies", "tech stack", "stack", "tools"],
     answer:
-      "His stack spans GCP, AWS, Docker, Kubernetes, Terraform, GitHub Actions, Google Cloud Build, Datadog, IAM & Secret Manager, SonarCloud/OPA for DevSecOps, PostgreSQL/Hasura, and Linux.",
+      "His stack spans AWS, Microsoft Azure, and Google Cloud; Docker and Kubernetes (GKE / EKS / AKS); Terraform and OPA; GitHub Actions, Cloud Build, Bitbucket Pipelines, and Azure DevOps; Datadog, Prometheus, Grafana, and CloudWatch; plus DevSecOps tooling like SonarCloud and SAST.",
   },
   {
     keywords: ["products", "worked on", "projects", "companies"],
     answer:
-      "At ThinkHat.ai, Prashanth supported NOKI (a healthcare and EHR platform), Samaras (a clinical-trial and life-sciences platform), Socratic AI (a healthcare and clinical simulation platform), and The Supper (an Australian startup, where he now works full-time as Cloud & DevOps Manager). Earlier, he worked in enterprise operations at Colruyt Group.",
+      "At ThinkHat.ai, Prashanth supported NOKI (a healthcare and EHR platform), Samaras (a clinical-trial and life-sciences platform), Socratic AI (a healthcare and clinical simulation platform), and The Supper (an Australian investment platform, where he now works full-time as Senior Cloud & DevOps Engineer). Earlier, he worked in enterprise operations and Azure at Colruyt Group.",
   },
   {
     keywords: ["ai agent", "ai-agent", "ai work", "agents", "samaras"],
     answer:
-      "For Samaras, Prashanth introduced an AI DevOps agent designed to work automatically from the moment code is committed to the main branch all the way through to deployment — handling build, validation, and release coordination with reduced manual intervention. It's an active engineering direction rather than a finished product.",
+      "Deploying AI agents to production is Prashanth's specialty. At ThinkHat.ai he packaged agents for NOKI, Samaras, and Socratic AI as containers, wired secure model / API access, and ran them on Cloud Run and Kubernetes with monitoring and rollback. For Samaras he also built an AI DevOps agent that runs automatically from a main-branch commit through build, validation, and deployment.",
   },
   {
     keywords: ["career goals", "future", "vision", "long term", "long-term"],
@@ -352,24 +354,24 @@ export const AI_KNOWLEDGE_BASE = [
       "You can reach Prashanth at prashanthmanna.ai@gmail.com or connect with him on LinkedIn — both are linked in the contact section below, along with a downloadable resume.",
   },
   {
-    keywords: ["the supper", "supper", "manager", "current role", "current job", "leadership"],
+    keywords: ["the supper", "supper", "current role", "current job", "marketing", "strategy"],
     answer:
-      "Since May 2026, Prashanth has been the full-time Cloud & DevOps Manager at The Supper, an Australian startup. He owns cloud infrastructure end to end — architecture, provisioning, security, cost, and reliability — and leads DevOps strategy, release management, and incident response. He originally built The Supper's infrastructure and CI/CD as a client engagement at ThinkHat.ai.",
+      "Since May 2026, Prashanth has been the full-time Senior Cloud & DevOps Engineer at The Supper, an Australian investment platform, and a member of its Marketing & Strategy team. He owns cloud infrastructure, DevOps, and release operations — including the AWS production backend, security for KYC-regulated workloads, SES / SNS communications, and Bitbucket CI/CD.",
   },
   {
     keywords: ["location", "where is he", "based", "relocate", "relocation", "remote"],
     answer:
-      "Prashanth is based in Hyderabad, India, and is open to remote roles or relocation.",
+      "Prashanth is based in Abu Dhabi, UAE, and is open to remote roles or relocation.",
   },
   {
     keywords: ["colruyt"],
     answer:
-      "Prashanth worked at Colruyt Group from 2019 to 2024 as an Operational System Engineer, supporting enterprise applications on company-owned servers and internal data-center infrastructure — building the foundation in deployments, troubleshooting, and production operations that carried into his cloud and DevOps career.",
+      "Prashanth worked at Colruyt Group, a European retail group, from 2019 to 2024 as an Operational System Engineer — supporting business-critical systems in internal data centers and on Microsoft Azure (VMs, AKS, Azure DevOps Pipelines, Entra ID, Key Vault, Blob Storage, VNet, Azure Monitor), within ITIL-style incident and change management.",
   },
   {
     keywords: ["thinkhat"],
     answer:
-      "At ThinkHat.ai (2024–May 2026), Prashanth worked as a Cloud & DevOps Engineer, designing, deploying, automating, securing, and supporting infrastructure across NOKI, Samaras, Socratic AI, and The Supper.",
+      "At ThinkHat.ai (2024–May 2026), Prashanth was a Cloud & DevOps Engineer focused on AI agent deployment — running agents in production for NOKI, Samaras, and Socratic AI and supporting four production platforms on GCP and AWS, including The Supper.",
   },
   {
     keywords: ["education", "degree", "college", "university", "masters"],
